@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+  
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #5956E9,
+  secondary: #DCDEFE,
+  light: #f3f3f3,
+  dark: #252B42,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545,
+	pink: #FAB8C3,
+);
+
+$body-bg: white;
+$body-color: #737373;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #5956E9;
+
+// Fonts
+$font-family-base: 'Raleway', sans-serif;
+$headings-font-family: $font-family-base;
+$display-font-family: $font-family-base;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+$font-weight-normal: 600;
+$headings-font-weight: $font-weight-bold;
+$lead-font-size:   1.30rem;
+
+$spacer: 1.5rem;
+$line-height-base: 1.5;
+$headings-line-height: 1.2;
+$enable-responsive-font-sizes: true;
+
+.hero {
+  background-image: url("images/small-purple-ellipse.svg");	
+  background-position: right center;	
+  background-size: contain;	
+  background-repeat: no-repeat;
+}
+
+.big-yellow {
+  bottom: 10px; 
+  right: 150px;
+}
+
+.small-pink {
+  top:15px; 
+  left: 20px;
+}
+
+.small-yellow {
+  top:15px; 
+  left: 20px;
+}
+
+.gradient-container {
+  background-image: none;
+}
+
+.experience-container {
+  border-radius: none;
+}
+
+.experience-image {
+    margin-top: 0;
+  }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    background-image: url("images/yellow-shape.svg"),url("images/purple-ellipse.svg");	
+    background-position: top left, right center;	
+    background-size: 80px 100px, contain;	
+    background-repeat: no-repeat, no-repeat;
+  }
+  
+  .hero {
+    background-image: none;
+  }
+  
+  .hero-image {
+    width:90%;
+  }
+  
+  .small-pink {
+    top: 180px; 
+    left: -710px;
+	 }
+  
+  .big-yellow {
+  bottom: 70px; 
+  right: 390px;
+	}
+  
+  .gradient-container {
+    background-image: linear-gradient(to right, #EDEEF6, #FCFCFD);	
+    background-position: top left;	
+    background-size: 100%;	
+    background-repeat: repeat;	
+    border-radius: 20px;
+  }
+  
+  .experience-container {
+    border-radius: 20px;
+  }
+  
+  .experience-image {
+    margin-top: -15rem;
+  }
+
+	
+} 
+
+@import 'bootstrap-4.3.1';
